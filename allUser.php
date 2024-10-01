@@ -80,10 +80,9 @@ include 'config.php';
 <div class="container">
     <h2>Daftar Tugas</h2>
     <?php
-    // Menampilkan pesan jika ada
     if (isset($_SESSION['message'])) {
         echo "<div class='alert alert-success'>" . $_SESSION['message'] . "</div>";
-        unset($_SESSION['message']); // Menghapus pesan setelah ditampilkan
+        unset($_SESSION['message']); 
     }
     ?>
     <table class="table">
